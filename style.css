@@ -119,8 +119,8 @@ input {
     display: grid;
     gap: 0.125rem;
     justify-content: center;
-    grid-template-columns: repeat(var(--columns), 7rem);
-    grid-template-rows: repeat(var(--rows), 5rem);
+    grid-template-columns: repeat(var(--columns), 5rem);
+    grid-template-rows: repeat(var(--rows), 2.5rem);
 }
 
 .table-cell {
@@ -134,6 +134,10 @@ input {
     color: #0D1117;
     font-size: larger;
     font-weight: bold;
+}
+
+.result {
+    background-color: #76a6d0;
 }
 
 a {

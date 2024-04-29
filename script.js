@@ -322,7 +322,11 @@ function drawTable(arr = []) {
 
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr[0].length; j++) {
-            table.innerHTML += `<div class="table-cell">${arr[i][j]}</div>`
+            if (j == arr[0].length - 1) {
+                table.innerHTML += `<div class="table-cell result">${arr[i][j]}</div>`
+            } else {
+                table.innerHTML += `<div class="table-cell">${arr[i][j]}</div>`
+            }
         }
     }
 }
