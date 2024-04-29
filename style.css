@@ -33,7 +33,7 @@ body {
 }
 
 body {
-    background-color: #0D1117;
+    background-color: #010409;
     min-height: 100dvh;
 }
 
@@ -54,7 +54,6 @@ header {
     font-size: x-large;
     background-color: #010409;
     border-bottom: #21262D solid 0.5pt;
-    margin-bottom: 4rem;
     box-shadow: var(--shadow-elevation-high);
 }
 
@@ -74,10 +73,10 @@ footer {
     font-size: x-large;
     background-color: #010409;
     border-top: #21262D solid 0.5pt;
-    margin-top: 2rem;
 }
 
 .container {
+    background-color: #0D1117;
     width: 100%;
     min-height: calc(100dvh - 18rem - 2pt);
     display: flex;
@@ -85,6 +84,8 @@ footer {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 input {
