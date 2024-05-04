@@ -288,8 +288,9 @@ function truthTable(expression = '') {
         table.push(variables)
         // 
 
+        if (variables.length > 5 && document.getElementById('exceed-limit-check').checked == false) { return [['X'], ['-']] }
+
         let counter = -1
-        let evaluatedNumber
 
         //evaluating
         for (let i = 0; i < Math.pow(2, variables.length); i++) {
@@ -332,6 +333,10 @@ function drawTable(arr = []) {
 }
 
 document.getElementById('the-input').addEventListener('input', (e) => {
+    drawTable(truthTable(document.getElementById('the-input').value))
+})
+
+document.getElementById('exceed-limit-check').addEventListener('input', (e) => {
     drawTable(truthTable(document.getElementById('the-input').value))
 })
 
