@@ -100,40 +100,43 @@ footer {
     appearance: none;
     min-width: 4rem;
     max-width: 4rem;
-    height: 2rem;
+    height: 1.5rem;
     border-radius: 1rem;
     background-color: #010409;
-    overflow: hidden;
     position: relative;
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 .exceed-limit-check::before {
     content: '';
     position: absolute;
     width: 0%;
+    min-width: 1.5rem;
     height: 100%;
     background-color: #af5454;
+    border-radius: 1rem;
     transform-origin: left;
-    transition: width 100ms ease-in-out;
+    transition: width 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
 .exceed-limit-check:checked::before {
-    width: 100%
+    width: 100%;
 }
 
 .exceed-limit-check::after {
+    content: '';
     position: absolute;
     right: 50%;
-    content: '';
+    top: -0.25rem;
     width: 2rem;
     height: 2rem;
     border-radius: 1rem;
+    box-shadow: var(--shadow-elevation-high);
     background-color: #E6EDF3;
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .exceed-limit-check:checked:after {
-    content: '';
     right: 0;
 }
 
