@@ -136,7 +136,7 @@ footer {
     transition: all 200ms ease-in-out;
 }
 
-.exceed-limit-check:checked:after {
+.exceed-limit-check:checked::after {
     right: 0;
 }
 
