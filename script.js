@@ -164,7 +164,7 @@ function translate(s) {
         if (brackets[i] == -1 && is_var(s[i])) {
             cnt1++;
         }
-        if (brackets[i] == -1 && is_gate(s[i])) {
+        if (brackets[i] == -1 && (is_gate(s[i]) || s[i] == '♪')) {
             val = -1;
             break;
         }
